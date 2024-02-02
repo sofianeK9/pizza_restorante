@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menu {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: #8a241d;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    margin: auto;
+    height: 80px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin-right: 35px;
+
+}
+
+.title {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-left: 35px;
+    font-size: xx-large;
+
+}
+
+.head {
+    height: 500px;
+    background-image: url(/imgs/pizza-2810589_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+.head h1 {
+    transition: color 0.5s ease-in-out;
+}
+
+.head button {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.head:hover h1 {
+    color: rgb(69, 8, 8);
+
+}
+
+button {
+    padding: 10px;
+    width: 20%;
+    border-radius: 25px;
+    border: none;
+    background-color: #8a241d;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: "Pacifico", cursive;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    font-style: normal;
+    color: rgb(2, 70, 2);
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+
+.carddishes {
+    width: 450px;
+    height: 350px;
+    padding: 20px;
+    transition: transform 0.3s ease-out;
+}
+
+.carddishes:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card p {
+    font-size: xx-large;
+    width: 100%;
+}
+
+h3 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(2, 70, 2);
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #8a241d;
+}
+
+.flex-item {
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    background-color: #701610;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    border: 2px solid black;
+}
+
+
+.flex-item img {
+    width: 20%;
+    object-fit: contain;
+}
+
+h4 {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.contact {
+    display: flex;
+    padding: 25px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: x-large;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 30%;
+    flex-direction: column;
+}
+
+.contacts img {
+    width: 40px;
+    object-fit: contain;
+}
+
+.contact1 {
+    display: flex;
+    gap: 50px;
+}
+
+.map {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    object-fit: contain;
+}
+
+.map1 {
+    width: 100%;
+    object-fit: contain;
+}
+
+footer {
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 40px;
+    padding: 25px;
+    background-color: #701610;
+    color: white !important;
+
+}
+
+@media (max-width:768px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
