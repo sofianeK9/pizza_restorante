@@ -4,21 +4,17 @@
     box-sizing: border-box;
 }
 
-
 .menu {
     position: fixed;
     z-index: 999;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
     background-color: #8a241d;
     color: white;
     font-size: x-large;
     font-weight: bold;
-    margin: auto;
     height: 80px;
 }
 
@@ -27,7 +23,6 @@
     color: white;
     padding: 5px;
     margin-right: 35px;
-
 }
 
 .title {
@@ -38,7 +33,6 @@
     font-style: normal;
     margin-left: 35px;
     font-size: xx-large;
-
 }
 
 .head {
@@ -74,7 +68,6 @@ h1 {
 
 .head:hover h1 {
     color: rgb(69, 8, 8);
-
 }
 
 button {
@@ -131,7 +124,6 @@ h3 {
     font-weight: bolder;
     font-size: xx-large;
     text-align: center;
-
 }
 
 .container {
@@ -145,8 +137,6 @@ h3 {
     display: flex;
     padding: 15px;
     justify-content: space-around;
-
-
 }
 
 .text {
@@ -161,7 +151,6 @@ h3 {
     font-size: x-large;
     border: 2px solid black;
 }
-
 
 .flex-item img {
     width: 30%;
@@ -194,12 +183,13 @@ h4 {
 }
 
 .contacts img {
-    width: 40px;
+    width: 80px;
     object-fit: contain;
 }
 
 .contact1 {
     display: flex;
+    align-items: center;
     gap: 50px;
 }
 
@@ -226,47 +216,57 @@ footer {
     padding: 25px;
     background-color: #701610;
     color: white !important;
-
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .menu {
         display: flex;
         justify-content: center;
-        align-content: center;
+        align-items: center; /* Modification ici */
+        flex-direction: column; /* Modification ici */
+    }
+
+    .title {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu.active a {
+        display: block;
     }
 
     .carddishes {
         padding: 20px;
-
     }
 
+    /* Responsive for Nous Contacter */
     .contact {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .card p {
-        font-size: x-large;
-        text-align: center;
+    .contacts {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contacts img {
+        width: 80px;
+        object-fit: contain;
+    }
+
+    .contact1 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
         width: 100%;
     }
 
-    button {
-        padding: 10px;
-        width: 20%;
-        border-radius: 25px;
-        border: none;
-        background-color: #8a241d;
-        color: white;
-        font-size: large;
-        font-weight: bold;
-        border: 2px solid black;
-        cursor: pointer;
-    }
-
-    .text {
-        font-size: large;
+    .map {
+        width: 100%;
     }
 }
 
