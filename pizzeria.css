@@ -242,7 +242,21 @@ footer {
         padding: 20px;
     }
 
-    
+    button {
+        padding: 10px;
+        width: 20%;
+        border-radius: 25px;
+        border: none;
+        background-color: #8a241d;
+        color: white;
+        font-size: large;
+        font-weight: bold;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+    .text {
+        font-size: small;
+    }
     .contact {
         display: flex;
         flex-wrap: wrap;
